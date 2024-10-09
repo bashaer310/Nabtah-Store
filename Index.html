@@ -1,16 +1,101 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/style.css" />
-    <title>E-commerce</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1>Welcome to my E-commerce Landing Page</h1>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="keywords" content="plants">
+  <meta name="description" content="E-commerce landing page">
+  <meta name="author" content="Bashaer">
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <a href="/Index.html"><i class="fa-solid fa-seedling" style="color: #000000;"></i></a>
+
+    <!-- navigation -->
+    <nav id="navigations">
+      <ul>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#hero">About</a></li>
+        <li><a href="#contact-info">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <!-- hero section -->
+    <section id="hero">
+      <h1>Plants make life better</h1>
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur nam, cumque beatae sit
+          accusantium consectetur. </p>
+        <button id="btn"><a href="#product">Explore more!</a></button>
+      </div>
+    </section>
+
+    <!-- products section -->
+    <section id="products">
+      <h2>Products</h2>
+      <div>
+        <img src="./Images/plant1.jpg" width="200" height="200" alt="plant">
+        <h4>Product</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <button id="btn"><a href="">Buy</a></button>
+      </div>
+    </section>
+
+    <!-- reviews section -->
+    <section id="reviews">
+      <h2>Reviews</h2>
+      <div>
+        <h4>Reviewer</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+    </section>
+
+    <!-- subscription-form section -->
+    <section id="subscription-form">
+      <h2>Subscription form</h2>
+      <div>
+        <form action="" method="post">
+          <Label for="email">Email:</Label>
+          <input type="email" id="email" name="email" required>
+          <input type="submit" value="subscribe">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer>
+    <!-- page-links section -->
+    <section id="page-links">
+      <ul>
+        <li><a href="">Privacy policy</a></li>
+        <li><a href="">Terms of service</a></li>
+        <li><a href="">FAQ</a></li>
+      </ul>
+    </section>
+    <!-- contact-info section -->
+    <section id="contact-info">
+      <p>email: Bashaer@hotmail.com </p>
+    </section>
+    <!-- social-media-accounts section -->
+    <section id="social-media-accounts">
+      <ul>
+        <i class="fab fa-youtube"><a href="" target="_blank"></a></i>
+        <i class="fab fa-linkedin"></i><a href="" target="_blank"></a></i>
+        <i class="fab fa-twitter"><a href="" target="_blank"></a></i>
+      </ul>
+    </section>
+  </footer>
+</body>
+
 </html>
