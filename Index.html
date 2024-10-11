@@ -2,28 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="plants">
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="plants, green, seedling">
   <meta name="description" content="E-commerce landing page">
   <meta name="author" content="Bashaer">
-  <title>E-commerce</title>
+  <title>Nabtah</title>
+
+  <!-- links -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 
 <body>
   <!-- header -->
   <header>
-    <a href="/Index.html"><i class="fa-solid fa-seedling" style="color: #000000;"></i></a>
+    <a href="./Index.html" aria-label="logo"><i class="fa-solid fa-seedling"></i> Nabtah</a>
 
     <!-- navigation -->
     <nav id="navigations">
       <ul>
-        <li><a href="#products">Shop</a></li>
-        <li><a href="#hero">About</a></li>
-        <li><a href="#contact-info">Contact</a></li>
+        <li><a href="#products" aria-label="navigate-to-Products">Shop</a></li>
+        <li><a href="#hero" aria-label="navigate-to-About">About</a></li>
+        <li><a href="#contact-info" aria-label="navigate-to-Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -36,7 +39,7 @@
       <div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur nam, cumque beatae sit
           accusantium consectetur. </p>
-        <button id="btn"><a href="#product">Explore more!</a></button>
+        <button aria-label="Explore the products">Shop Now!</button>
       </div>
     </section>
 
@@ -45,9 +48,9 @@
       <h2>Products</h2>
       <div>
         <img src="./Images/plant1.jpg" width="200" height="200" alt="plant">
-        <h4>Product</h4>
+        <h3>Product</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <button id="btn"><a href="">Buy</a></button>
+        <button aria-label="Buy a product">Buy</button>
       </div>
     </section>
 
@@ -55,18 +58,18 @@
     <section id="reviews">
       <h2>Reviews</h2>
       <div>
-        <h4>Reviewer</h4>
+        <h3>Reviewer</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
       </div>
     </section>
 
     <!-- subscription-form section -->
     <section id="subscription-form">
-      <h2>Subscription form</h2>
+      <h2>Newsletter</h2>
       <div>
-        <form action="" method="post">
+        <form action="#" method="post">
           <Label for="email">Email:</Label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" placeholder="Norah@gmail.com" required>
           <input type="submit" value="subscribe">
         </form>
       </div>
@@ -77,23 +80,41 @@
   <footer>
     <!-- page-links section -->
     <section id="page-links">
-      <ul>
-        <li><a href="">Privacy policy</a></li>
-        <li><a href="">Terms of service</a></li>
-        <li><a href="">FAQ</a></li>
-      </ul>
+      <h3>Page Links</h3>
+      <div>
+        <ul>
+          <li><a href="#" target="_blank" aria-label="navigate-to-Privacy-page">Privacy Policy</a></li>
+          <li><a href="#" target="_blank" aria-label="navigate-to-Terms-of-Use-page">Terms of Use</a></li>
+        </ul>
+      </div>
     </section>
+
     <!-- contact-info section -->
     <section id="contact-info">
-      <p>email: Bashaer@hotmail.com </p>
+      <h3>Contact Us</h3>
+      <div>
+        <ul>
+          <li><a href="mailto:customer_service@nabtah.com" target="_blank" aria-label="navigate-to-Email"><i
+                class="fa-solid fa-envelope"></i> customer_service@nabtah.com</a></li>
+          <li><a href="tel:+966557834286" target="_blank" aria-label="navigate-to-Telephone"><i
+                class="fa-solid fa-phone-volume"></i> +966557834286</a></li>
+        </ul>
+      </div>
     </section>
+
     <!-- social-media-accounts section -->
     <section id="social-media-accounts">
-      <ul>
-        <i class="fab fa-youtube"><a href="" target="_blank"></a></i>
-        <i class="fab fa-linkedin"></i><a href="" target="_blank"></a></i>
-        <i class="fab fa-twitter"><a href="" target="_blank"></a></i>
-      </ul>
+      <h3>Follow us</h3>
+      <div>
+        <ul>
+          <li><a href="https://www.instagram.com/nabtah_store" target="_blank" aria-label="navigate-to-Instagram"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a href="https://www.tiktok.com/nabtah_store" target="_blank" aria-label="navigate-to-tiktok"><i
+                class="fab fa-tiktok"></i></a></li>
+          <li><a href="https://x.com/nabtah_store" target="_blank" aria-label="navigate-to-Twitter"><i
+                class="fab fa-twitter"></i></a></li>
+        </ul>
+      </div>
     </section>
   </footer>
 </body>
