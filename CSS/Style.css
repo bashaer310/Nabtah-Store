@@ -22,7 +22,7 @@ ul {
     list-style: none;
 }
 
-.btn {
+.btn, input {
     font: inherit;
     border: none;
     appearance: none;
@@ -33,7 +33,7 @@ ul {
     border-radius: 2.5px;
     text-transform: uppercase;
 }
-.btn:hover {
+.btn:hover,input[type="submit"]:hover {
     background-color: rgb(186,123,29, 0.9);
     font-weight: bold;
     scale: 1.1;
@@ -94,6 +94,7 @@ section.hero>h1,p {
 section.hero>h1{
     font-size:40px;
     text-align: center;
+    text-transform: capitalize;
 }
 section.hero>p {
     max-width: 700px;
@@ -101,13 +102,14 @@ section.hero>p {
 }
 
 /*products & reviews & subscription-form section*/
-.products, .reviews, section.subscription-form{
-    margin-top:85px;
+.products, .reviews {
+    margin-top:100px;
 }
-.products>h2, .reviews>h2, .subscription-form>h2 {
+.products>h2, .reviews>h2 {
     font-size: 30px;
     text-align: center;
-    color: rgb(31, 64, 16);;
+    color: rgb(31, 64, 16);
+    text-transform: capitalize;
 }
 .products-container, .reviews-container{
     display: flex;
@@ -116,7 +118,7 @@ section.hero>p {
     padding: 50px 50px;
     gap: 30px;
     }
-.product-card, .review-card{
+.product-card, .review-card, .subscription-form-card{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,6 +127,7 @@ section.hero>p {
     box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
     border-radius: 2px;
     width: 250px;
+    gap: 10px;
     height: 250px;
     animation-name: movement; 
     animation-duration: 10s; 
@@ -135,6 +138,17 @@ section.hero>p {
     align-items: start;
     padding-left: 50px;
     height: 130px;
+}
+.subscription-form-card{
+    margin:auto;
+    padding-top: 50px;
+    animation-play-state: paused;
+    width: 500px;
+    height: 200px;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url("../Images/hero.jpg");
+    background-size: 800px 500px;
+    background-origin: border-box;
 }
 
 .product-card>img {
@@ -148,13 +162,23 @@ section.hero>p {
 }
 .review-card>.reviewer-info {
     display: flex;
-    flex-direction: row;
     gap: 5px;
 }
+.subscription-form-card>h2 {
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.subscription-form-card>p {
+    color: #ffffff;
+    font-weight: lighter;
+}
 .product-info>p, .review-card>p{
-    padding-top: 10px;
     color: #000;
     font-weight: lighter;
+}
+.input-info .email {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
 }
 .product-card:hover,.review-card:hover {
     scale: 1.1;
