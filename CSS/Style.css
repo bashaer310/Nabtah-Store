@@ -140,8 +140,7 @@ section.hero>p {
     height: 130px;
 }
 .subscription-form-card{
-    margin:auto;
-    padding-top: 50px;
+    margin: 50px auto 0 auto;
     animation-play-state: paused;
     width: 500px;
     height: 200px;
@@ -171,6 +170,7 @@ section.hero>p {
 .subscription-form-card>p {
     color: #ffffff;
     font-weight: lighter;
+    text-align: center;
 }
 .product-info>p, .review-card>p{
     color: #000;
