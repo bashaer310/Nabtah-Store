@@ -133,7 +133,7 @@ section.hero>p {
     width: 170px;
     height: 170px;
     animation-name: movement; 
-    animation-duration: 10s; 
+    animation-duration: 5s; 
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
 }
@@ -195,10 +195,10 @@ section.hero>p {
 
 @keyframes movement {
     from {
-        translate: 0 0;
+        translate: 30px 0;
     }
     to{
-        translate: 250px 0;
+        translate: 0 0;
     }
 }
 
