@@ -127,8 +127,8 @@ section.hero>p {
     background-color: rgba(248, 248, 248);
     box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
     border-radius: 2px;
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     animation-name: movement; 
     animation-duration: 10s; 
     animation-delay: 0.5s;
@@ -137,6 +137,7 @@ section.hero>p {
 .review-card{
     align-items: start;
     padding-left: 50px;
+    width: 300px;
     height: 130px;
 }
 .subscription-form-card{
@@ -151,13 +152,14 @@ section.hero>p {
 }
 
 .product-card>img {
-    width: 330px;
-    height: 235px;
+    width: 300px;
+    height: 200px;
 }
 .product-info{
     position: relative; 
     top:70px;
     text-align: center;
+    line-height: 20px;
 }
 .reviewer-info {
     display: flex;
@@ -176,6 +178,9 @@ section.hero>p {
 .product-info>p, .review-card>p{
     color: #000;
     font-weight: lighter;
+}
+.product-info>i {
+    color: #e2c037;
 }
 .input-info .email {
     background-color: rgb(255, 255, 255);
