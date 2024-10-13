@@ -11,6 +11,7 @@
   <title>Nabtah</title>
 
   <!-- links -->
+  <link rel="stylesheet" href="./CSS/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -19,14 +20,15 @@
 <body>
   <!-- header -->
   <header>
-    <a href="./Index.html" aria-label="logo"><i class="fa-solid fa-seedling"></i> Nabtah</a>
-
-    <!-- navigation -->
-    <nav id="navigations">
+    <div class="logo">
+      <a href="./Index.html" aria-label="logo"><i class="fa-solid fa-seedling"></i></a>
+    </div>
+    <!-- nav bar -->
+    <nav id="nav" class="nav">
       <ul>
-        <li><a href="#products" aria-label="navigate-to-Products">Shop</a></li>
-        <li><a href="#hero" aria-label="navigate-to-About">About</a></li>
-        <li><a href="#contact-info" aria-label="navigate-to-Contact">Contact</a></li>
+        <li><a href="#products" aria-label="navigate-to-Products">plants</a></li>
+        <li><a href="#hero" aria-label="navigate-to-About">about us</a></li>
+        <li><a href="#contact-info" aria-label="navigate-to-Contact">contact us</a></li>
       </ul>
     </nav>
   </header>
@@ -34,53 +36,91 @@
   <!-- main -->
   <main>
     <!-- hero section -->
-    <section id="hero">
+    <section id="hero" class="hero">
       <h1>Plants make life better</h1>
-      <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur nam, cumque beatae sit
-          accusantium consectetur. </p>
-        <button aria-label="Explore the products">Shop Now!</button>
-      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consequatur nam, cumque beatae sit
+        accusantium consectetur. </p>
+      <button class="btn" aria-label="explore-products">Shop Now!</button>
     </section>
 
     <!-- products section -->
-    <section id="products">
-      <h2>Products</h2>
-      <div>
-        <img src="./Images/plant1.jpg" width="200" height="200" alt="plant">
-        <h3>Product</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <button aria-label="Buy a product">Buy</button>
+    <section id="products" class="products">
+      <h2>Plants</h2>
+      <div class="products-container">
+        <div class="product-card">
+          <img src="./Images/plant1.png" alt="plant">
+          <div class="product-info">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./Images/plant2.png" alt="plant">
+          <div class="product-info">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="./Images/plant1.png" alt="plant">
+          <div class="product-info">
+            <h3>Lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- reviews section -->
-    <section id="reviews">
+    <section id="reviews" class="reviews">
       <h2>Reviews</h2>
-      <div>
-        <h3>Reviewer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-      </div>
-    </section>
-
-    <!-- subscription-form section -->
-    <section id="subscription-form">
-      <h2>Newsletter</h2>
-      <div>
-        <form action="#" method="post">
-          <Label for="email">Email:</Label>
-          <input type="email" id="email" name="email" placeholder="Norah@gmail.com" required>
-          <input type="submit" value="subscribe">
-        </form>
+      <div class="reviews-container">
+        <div class="review-card">
+          <div class="reviewer-info">
+            <i class="fa-solid fa-user"></i>
+            <h3>Lorem</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-info">
+            <i class="fa-solid fa-user"></i>
+            <h3>Lorem</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="review-card">
+          <div class="reviewer-info">
+            <i class="fa-solid fa-user"></i>
+            <h3>Lorem</h3>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
       </div>
     </section>
   </main>
-
+  <!-- subscription-form section -->
+  <section id="subscription-form" class="subscription-form">
+    <h2>Newsletter</h2>
+    <div class="subscription-form-container">
+      <form action="#" method="post">
+        <div class="label">
+          <Label for="email">Your Email:</Label>
+        </div>
+        <div class="input">
+          <input type="email" id="email" name="email" placeholder="Norah@gmail.com" required>
+          <input type="submit" value="subscribe" class="btn">
+        </div>
+      </form>
+    </div>
+  </section>
   <!-- footer -->
   <footer>
-    <!-- page-links section -->
-    <section id="page-links">
-      <h3>Page Links</h3>
+    <!-- quick-links section -->
+    <section id="quick-links">
+      <h3>Quick Links</h3>
       <div>
         <ul>
           <li><a href="#" target="_blank" aria-label="navigate-to-Privacy-page">Privacy Policy</a></li>
