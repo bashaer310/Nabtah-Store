@@ -13,6 +13,7 @@ body {
     color: #000;
     letter-spacing: 1px;
     font-size: 14px;
+    overflow-x: hidden;
 }
 a {
     text-decoration: none;
@@ -98,6 +99,8 @@ section.hero>h1{
 }
 section.hero>p {
     max-width: 700px;
+    font-size: 20px;
+    font-weight: lighter;
     text-align: center;
 }
 
@@ -157,7 +160,7 @@ section.hero>p {
 }
 .product-info{
     position: relative; 
-    top:70px;
+    top:35px;
     text-align: center;
     line-height: 20px;
 }
