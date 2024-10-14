@@ -25,7 +25,7 @@ ul {
     list-style: none;
 }
 
-.btn, input {
+button, input {
     font: inherit;
     border: none;
     appearance: none;
