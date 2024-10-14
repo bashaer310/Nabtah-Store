@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 /*global*/
@@ -7,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
 
     font-family: "Josefin Sans", serif;
@@ -15,10 +15,12 @@ body {
     font-size: 14px;
     overflow-x: hidden;
 }
+
 a {
     text-decoration: none;
     color: inherit;
 }
+
 ul {
     list-style: none;
 }
@@ -34,8 +36,9 @@ ul {
     border-radius: 2.5px;
     text-transform: uppercase;
 }
-.btn:hover,input[type="submit"]:hover {
-    background-color: rgb(186,123,29, 0.9);
+
+.btn:hover, input[type="submit"]:hover {
+    background-color: rgb(186, 123, 29, 0.9);
     font-weight: bold;
     scale: 1.1;
 }
@@ -55,11 +58,11 @@ header {
 
 .logo {
     color: rgb(31, 64, 16);
-    /*secondary-color:rgb(172, 120, 41);*/ 
+    /*secondary-color:rgb(172, 120, 41);*/
     scale: 1.7;
 }
 
-.nav>ul{
+.nav>ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,8 +72,9 @@ header {
 .nav>ul>li {
     text-transform: uppercase;
 }
+
 .nav>ul>li:hover {
-    color: rgb(186,123,29);
+    color: rgb(186, 123, 29);
     font-weight: bold;
     scale: 1.1;
 }
@@ -88,15 +92,16 @@ header {
     background-origin: border-box;
 }
 
-section.hero>h1,section.hero>p {
+section.hero>h1, section.hero>p {
     color: rgb(255, 255, 255);
     text-align: center;
 }
 
-section.hero>h1{
-    font-size:40px;
+section.hero>h1 {
+    font-size: 40px;
     text-transform: capitalize;
 }
+
 section.hero>p {
     max-width: 700px;
     font-size: 20px;
@@ -105,46 +110,57 @@ section.hero>p {
 
 /*products & reviews & subscription-form section*/
 .products, .reviews {
-    margin-top:100px;
+    margin-top: 100px;
 }
+
 .products>h2, .reviews>h2 {
     font-size: 30px;
     text-align: center;
     color: rgb(31, 64, 16);
     text-transform: capitalize;
 }
-.products-container, .reviews-container{
+
+.products-container, .reviews-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 50px 50px;
     gap: 30px;
-    }
-.product-card, .review-card, .subscription-form-card{
+}
+
+
+.product-card, .review-card, .subscription-form-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.product-card, .review-card {
     background-color: rgba(248, 248, 248);
     box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
     border-radius: 2px;
-    width: 170px;
-    height: 170px;
-    animation-name: movement; 
-    animation-duration: 5s; 
+    animation-name: movement;
+    animation-duration: 5s;
     animation-delay: 0.5s;
     animation-iteration-count: infinite;
 }
-.review-card{
+
+.product-card {
+    width: 170px;
+    height: 170px;
+}
+
+.review-card {
     align-items: start;
     padding-left: 50px;
     width: 300px;
     height: 130px;
 }
-.subscription-form-card{
+
+.subscription-form-card {
     margin: 50px auto 0 auto;
-    animation-play-state: paused;
     width: 480px;
     height: 200px;
     border-radius: 10px;
@@ -157,38 +173,46 @@ section.hero>p {
     width: 280px;
     height: 180px;
 }
-.product-info{
-    position: relative; 
-    top:35px;
+
+.product-info {
+    position: relative;
+    top: 35px;
     text-align: center;
     line-height: 20px;
 }
+
 .reviewer-info {
     display: flex;
     gap: 5px;
 }
+
 .subscription-form-card>h2 {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
     text-align: center;
 }
+
 .subscription-form-card>p {
     color: rgb(255, 255, 255);
     font-weight: lighter;
     text-align: center;
 }
-.product-info>p, .review-card>p{
+
+.product-info>p, .review-card>p {
     color: rgba(0, 0, 0);
     font-weight: lighter;
 }
+
 .product-info>i {
     color: rgb(226, 192, 55);
 }
+
 .input-info .email {
     background-color: rgb(255, 255, 255);
     width: 250px;
 }
-.product-card:hover,.review-card:hover {
+
+.product-card:hover, .review-card:hover {
     scale: 1.1;
 }
 
@@ -196,7 +220,8 @@ section.hero>p {
     from {
         translate: 30px 0;
     }
-    to{
+
+    to {
         translate: 0 0;
     }
 }
@@ -211,26 +236,27 @@ footer {
     margin-top: 50px;
 }
 
-.social-media-accounts-card>ul{
+.social-media-accounts-card>ul {
     display: flex;
     justify-content: space-around;
     gap: 10px;
     align-items: flex-start;
 }
 
-footer h3{
+footer h3 {
     text-align: center;
     text-transform: capitalize;
     color: rgb(31, 64, 16);
     font-size: 20px;
     padding-bottom: 10px;
 }
+
 footer a {
     font-weight: lighter;
 }
 
-footer a> i {
-    color:rgb(186, 123, 29);
+footer a>i {
+    color: rgb(186, 123, 29);
 }
 
 footer a>i:hover {
