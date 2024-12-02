@@ -203,6 +203,16 @@ section.hero>button {
     gap: 0.5rem;
 }
 
+.product-info>p,
+.review-card>p {
+    color: rgba(0, 0, 0);
+    font-weight: lighter;
+}
+
+.product-info>i {
+    color: rgb(226, 192, 55);
+}
+
 .subscription-form-card>h2 {
     color: rgb(255, 255, 255);
     text-transform: capitalize;
@@ -215,23 +225,13 @@ section.hero>button {
     text-align: center;
 }
 
-.product-info>p,
-.review-card>p {
-    color: rgba(0, 0, 0);
-    font-weight: lighter;
-}
-
-.product-info>i {
-    color: rgb(226, 192, 55);
+.input-info {
+    margin-top: 2rem;
 }
 
 .input-info .email {
     background-color: rgb(255, 255, 255);
     width: 15rem;
-}
-
-.input-info {
-    margin-top: 2rem;
 }
 
 .product-card:hover,
