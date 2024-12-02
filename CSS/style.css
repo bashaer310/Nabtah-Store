@@ -168,7 +168,7 @@ section.hero>button {
 .subscription-form-card {
     margin: 5rem auto 0 auto;
     padding: 5rem 0;
-    width: 60%;
+    width: 50%;
     border-radius: 10px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
         url("../Images/hero.jpg");
@@ -231,7 +231,6 @@ section.hero>button {
 
 .input-info .email {
     background-color: rgb(255, 255, 255);
-    width: 15rem;
 }
 
 .product-card:hover,
@@ -253,7 +252,6 @@ footer {
     display: flex;
     justify-content: space-around;
     gap: 0.5rem;
-    align-items: flex-start;
 }
 
 footer h3 {
