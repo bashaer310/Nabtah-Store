@@ -2,274 +2,278 @@
 
 /*global*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Josefin Sans", serif;
-    color: rgba(0, 0, 0);
-    letter-spacing: 1px;
-    font-size: 14px;
-    overflow-x: hidden;
+  font-family: "Josefin Sans", serif;
+  color: rgba(0, 0, 0);
+  letter-spacing: 1px;
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 button,
 input {
-    font: inherit;
-    border: none;
-    appearance: none;
-    background-color: rgb(186, 123, 29);
-    padding: 0.7rem 0.7rem;
-    box-shadow: 0 0.5px 3px 0 rgba(12, 7, 0, 0.491);
-    border-radius: 2.5px;
-    text-transform: uppercase;
+  font: inherit;
+  border: none;
+  appearance: none;
+  background-color: rgb(186, 123, 29);
+  padding: 0.7rem 0.7rem;
+  box-shadow: 0 0.5px 3px 0 rgba(12, 7, 0, 0.491);
+  border-radius: 2.5px;
+  text-transform: uppercase;
 }
 
 button:hover {
-    background-color: rgb(186, 123, 29, 0.9);
-    scale: 1.1;
+  background-color: rgb(186, 123, 29, 0.9);
+  scale: 1.1;
 }
 
 /* header */
 header {
-    background-color: rgb(255, 255, 255);
-    padding: 1.5rem 2.5rem;
-    box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  background-color: rgb(255, 255, 255);
+  padding: 1.5rem 2.5rem;
+  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .logo {
-    color: rgb(31, 64, 16);
-    /*secondary-color:rgb(172, 120, 41);*/
-    scale: 1.7;
+  color: rgb(31, 64, 16);
+  /*secondary-color:rgb(172, 120, 41);*/
+  scale: 1.7;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
-.nav>ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 2.5rem;
+.nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.nav>ul>li {
-    text-transform: uppercase;
+.nav > ul > li {
+  text-transform: uppercase;
 }
 
-.nav>ul>li:hover {
-    color: rgb(186, 123, 29);
-    font-weight: bold;
-    scale: 1.1;
+.nav > ul > li:hover {
+  color: rgb(186, 123, 29);
+  font-weight: bold;
+  scale: 1.1;
 }
 
 /*hero section*/
 .hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-        url("../Images/hero.jpg");
-    background-size: cover;
-    background-origin: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../Images/hero.jpg");
+  background-size: cover;
+  background-origin: border-box;
 }
 
-section.hero>h1,
-section.hero>p {
-    color: rgb(255, 255, 255);
-    text-align: center;
+section.hero > h1,
+section.hero > p {
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
 
-section.hero>h1 {
-    font-size: 40px;
-    text-transform: capitalize;
+section.hero > h1 {
+  font-size: 40px;
+  text-transform: capitalize;
 }
 
-section.hero>p {
-    max-width: 50rem;
-    font-size: 20px;
-    text-wrap: wrap;
-    font-weight: lighter;
+section.hero > p {
+  max-width: 50rem;
+  font-size: 20px;
+  text-wrap: wrap;
+  font-weight: lighter;
 }
 
-section.hero>button {
-    margin-top: 2.5rem;
+section.hero > button {
+  margin-top: 2.5rem;
 }
-
 
 /*products & reviews & subscription-form section*/
 .products,
 .reviews {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
-.products>h2,
-.reviews>h2 {
-    font-size: 30px;
-    text-align: center;
-    color: rgb(31, 64, 16);
-    text-transform: capitalize;
+.products > h2,
+.reviews > h2 {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(31, 64, 16);
+  text-transform: capitalize;
 }
 
 .products-container,
 .reviews-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .product-card,
 .review-card {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .product-card,
 .review-card,
 .subscription-form-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .review-card {
-    background-color: rgba(248, 248, 248);
-    box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
-    border-radius: 2px;
-    align-items: start;
-    padding-left: 2.5rem;
-    width: 18rem;
-    height: 9rem;
+  background-color: rgba(248, 248, 248);
+  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 2px;
+  align-items: start;
+  padding-left: 2.5rem;
+  width: 18rem;
+  height: 9rem;
 }
 
 .subscription-form-card {
-    margin: 5rem auto 0 auto;
-    padding: 5rem 0;
-    width: 50%;
-    border-radius: 10px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
-        url("../Images/hero.jpg");
-    background-size: 50rem 30rem;
-    background-origin: border-box;
+  margin: 5rem auto 0 auto;
+  padding: 5rem 0;
+  width: 50%;
+  border-radius: 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)),
+    url("../Images/hero.jpg");
+  background-size: 50rem 30rem;
+  background-origin: border-box;
 }
 
 .product-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 12rem;
-    height: 12rem;
-    background-color: rgba(248, 248, 248);
-    box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
-    border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 12rem;
+  background-color: rgba(248, 248, 248);
+  box-shadow: 0 0.5px 1.5px 0 rgb(0, 0, 0, 0.2);
+  border-radius: 2px;
 }
 
 .product-card img {
-    width: 16rem;
-    height: 11rem;
+  width: 16rem;
+  height: 11rem;
 }
 
 .product-info {
-    text-align: center;
-    line-height: 1.5rem;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 .reviewer-info {
-    display: flex;
-    gap: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
 }
 
-.product-info>p,
-.review-card>p {
-    color: rgba(0, 0, 0);
-    font-weight: lighter;
+.product-info > p,
+.review-card > p {
+  color: rgba(0, 0, 0);
+  font-weight: lighter;
 }
 
-.product-info>i {
-    color: rgb(226, 192, 55);
+.product-info > i {
+  color: rgb(226, 192, 55);
 }
 
-.subscription-form-card>h2 {
-    color: rgb(255, 255, 255);
-    text-transform: capitalize;
-    text-align: center;
+.subscription-form-card > h2 {
+  color: rgb(255, 255, 255);
+  text-transform: capitalize;
+  text-align: center;
 }
 
-.subscription-form-card>p {
-    color: rgb(255, 255, 255);
-    font-weight: lighter;
-    text-align: center;
+.subscription-form-card > p {
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  text-align: center;
 }
 
 .input-info {
-    margin-top: 2rem;
+  margin-top: 2rem;
+}
+
+.input-info>form {
+  text-align: center;
 }
 
 .input-info .email {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .product-card:hover,
 .review-card:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 /*footer*/
 footer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 2rem;
-    margin-top: 3rem;
-    padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 2rem;
 }
 
-.social-media-accounts-card>ul {
-    display: flex;
-    justify-content: space-around;
-    gap: 0.5rem;
+.social-media-accounts-card > ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
 }
 
 footer h3 {
-    margin-bottom: 0.5rem;
-    text-align: center;
-    text-transform: capitalize;
-    color: rgb(31, 64, 16);
-    font-size: 20px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgb(31, 64, 16);
+  font-size: 20px;
 }
 
 footer a {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
-footer a>i {
-    color: rgb(186, 123, 29);
+footer a > i {
+  color: rgb(186, 123, 29);
 }
 
-footer a>i:hover {
-    scale: 1.2;
+footer a > i:hover {
+  scale: 1.2;
 }
